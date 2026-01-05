@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Theme Variables - Moved from index.css */
+:root {
+  /* Common Design Tokens */
+  --legal-blue: 59 130 246;
+  --accent-gold: 212 175 55;
+  --success-green: 16 185 129;
+  --warning-amber: 245 158 11;
+  --danger-red: 239 68 68;
+
+  /* Animation Timings */
+  --transition-fast: 200ms;
+  --transition-base: 300ms;
+  --transition-slow: 500ms;
+  --transition-slower: 700ms;
+
+  /* Easing Functions */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 0 0% 3.9%;
+  
+  --radius: 0.5rem;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 98%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+}
+
+/* Global transitions */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
